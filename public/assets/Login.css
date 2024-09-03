@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    background-color:#3A525E;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+
+.logo{
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+   
+}
+
+.logo h1{
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    color: #ffff;
+}
+
+#akory{
+    color: #30B0C9;
+}
+
+.formulaire{
+    position: absolute;
+    top: 250px;
+    width: 700px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulaire form{
+    width: 100%;
+  
+}
+
+.form-group{
+    margin: 40px 0;
+}
+
+.form-group input{
+    border: solid 2px white;
+    border-radius: 80px;
+}
+
+
+#log{
+    position:relative;
+    left: 150px;
+    width: 400px;
+    border-radius: 100px;
+    border: none;
+    background-color:#44BAEA ;
+    user-select: none;
+}
+
+#log span{
+    color: black;
+}
+
+
+#sign{
+    position:relative;
+    left: 150px;
+    top: 30px;
+    width: 400px;
+    border-radius: 100px;
+    border: none;
+    background-color:#67A3B5;
+    user-select: none;
+}
+
+.message_alert{
+    display: flex;
+    justify-content: center;
+}
+
+.message_alert p{
+    color: red;
+    
+}
+

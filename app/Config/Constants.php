@@ -92,3 +92,18 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+
+defined('BASEURL')      || define('BASEURL', 'http://localhost/testCI/TestCI/');
+
+defined('BOOTSTRAPCSS')      || define('BOOTSTRAPCSS', BASEURL.'public/assets/Bootstrap/css/');
+
+defined('BOOTSTRAPJS')      || define('BOOTSTRAPJS', BASEURL.'public/assets/Bootstrap/js/');
+
+defined('FONTAWESOMEJS')      || define('FONTAWESOMEJS', BASEURL.'public/assets/fontawesome/js/');
+
+defined('FONTAWESOMECSS')      || define('FONTAWESOMECSS', BASEURL.'public/assets/fontawesome/css/');
+
+defined('CSS')      || define('CSS', BASEURL.'public/assets/');
+
+defined('JS')      || define('JS', BASEURL.'public/assets/');

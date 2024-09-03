@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#C2C8C8 ;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+p{
+    color: #333333;
+    
+    font-size: 15px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #3A525E;
+    align-items: center;
+    z-index: 200;
+}
+
+.logo h1{
+    position: relative;
+    left: 20px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color: #ffff;
+}
+
+#akory{
+    color: #30B0C9;
+}
+
+
+
+.navbar{
+    position: relative;  
+}
+
+.navbar a{
+    position: relative;
+    display: inline-block; /* Permet l'animation de largeur */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFF;
+    margin: 0 25px;
+    transition: 1s smooth transition;
+}
+
+.navbar a:hover{
+    color: #30B0C9;
+}
+  
+  
+
+
+.bouton{
+    color: #FFF;
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    display: none;
+    transition: .1s;
+    transition-property:rotate;
+}
+
+
+
+.menu{
+    position:absolute;
+    display:none;
+    top: -150px;
+    display: flexbox;
+    width: 100%;
+    background-color: #000000;
+    z-index: 100;
+
+}
+
+
+.menu ul{
+    list-style-type:none;
+    text-align: center;
+    
+}   
+
+.menu ul li{
+    padding: 8px 0;
+}
+
+.menu ul li a{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 13px;
+    color: #FFF;
+    text-decoration: none;
+    width: 100%;
+    z-index: 500;
+    
+}
+
+.menu ul li:hover{
+    background-color: #404040;
+}
+
+.gauche{
+    position: relative;
+    top: 150px;
+    height: 450px;
+}
+
+.droite{
+    position: relative;
+    top: 150px;
+    
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gauche h2{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #333333;
+    margin: 20px 0;
+}
+
+.solde{
+    position:relative;
+    top: 100px;
+    left: 40px;
+    width: 250px;
+    height: 300px;
+    background-color: #435A68;
+    border-radius: 50px;
+}
+
+.solde h2{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #FEFEFE;
+    
+}
+
+.solde h3{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #FEFEFE;
+    
+}
+
+.btn{
+    position: relative;
+    top: 50px;  
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 50px;
+}
+
+footer{
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon_footer{
+    position: relative;
+    top: 125px;
+    display: flex;
+}
+
+.icon{
+    position: relative;
+    
+    display: block;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    margin: 0 20px;
+}
+
+.fa-facebook{
+    text-align: center;
+}
+
+
+
+/*md*/
+@media (max-width:991px){
+    header{
+        height: 80px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .navbar a{
+        font-size: 14px;
+    }
+}
+
+/*sm*/
+@media (max-width:767px){
+    header{
+        height: 70px;
+    }
+
+    .logo{
+        font-size: 17px;
+    }
+
+    .navbar a{
+        font-size: 12px;
+    }
+
+    .navbar a::before {
+        height: 1px;
+    }
+}
+
+
+/*xs*/
+@media (max-width:575px){
+    header{
+        height: 60px;
+    }
+
+    .bouton{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+}
