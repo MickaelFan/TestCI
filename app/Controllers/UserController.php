@@ -158,6 +158,16 @@ class UserController extends BaseController
         }
 
         }
+
+
+
+        public function back(){
+            return view('users/back');
+        }
+
+        public function backOffice(){
+            return redirect()->to(base_url('public/back'));
+        }
     
     }
         

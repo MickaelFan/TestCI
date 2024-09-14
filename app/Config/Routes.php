@@ -24,3 +24,9 @@ $routes->get('retrait','UserController::retrait');
 $routes->post('faireDepot','UserController::faireDepot');
 
 $routes->post('faireRetrait','UserController::faireRetrait');
+
+$routes->get('backOffice','AdminController::index');
+
+$routes->get('dirAjout','AdminController::dirAjout');
+
+?>
